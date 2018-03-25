@@ -1,0 +1,73 @@
+$red:#FFF00 ;
+$ancho:100%;
+$alto:100%; 
+body {
+	background: $red;
+}
+
+#preloader {
+	width: $ancho;
+	height: $alto;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: green;
+	z-index: 9; // 
+	text-align: center;
+	background: {
+		color: green;
+		image: url("../img/preloader.gif");
+		repeat: no-repeat;
+		position: center;
+	}
+	p {
+		top: 50%;
+		position: relative;
+	}
+}
+#nav_container{
+	width: 100vw;
+	height: 100vh;
+	position: fixed;// te deja el menu fijo mientras das scroll
+	top: 0;
+	left: 0; 
+	margin: 0;
+	padding: 0;
+	transform: translateX(-100%);
+	background-color: red;
+	#close_button{
+		border: none;
+		border-radius: 5px;
+		background-color: black;
+		color: white;
+		cursor: pointer;
+		position: relative;
+		top: 100px;
+		transform: translateX(-50%);
+		
+	}
+		#nav_list{
+			width: 100%;
+			//display: flex;
+			list-style-type: none;
+			text-align:center;
+			text-decoration: none;
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+		li{
+			display: block;
+			font-size:60px;
+			font-weigth: 900;
+			font-family: "arial narrow";
+			a{
+				text-decoration: none;
+				color:white;
+			}
+			a:hover{
+				color: black;
+			}
+		}
+	}
+
+}
